@@ -1,18 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</android.support.constraint.ConstraintLayout>
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/usSpeaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_volume"
+                android:layout_gravity="right"/>
+            <TextView
+                android:id="@+id/usText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Text to speech is becoming an integral part of many content driven mobile APPs. If your APP is a tutorial or content heavy, then it is high time you think about adding the Text-To-Speech (TTS) feature to it. Voice input based command and text to speech is a trend now. In this tutorial, we will explore how “Text-To-Speech(TTS)” feature can be implemented in an Android APP. Text to speech (TTS) makes an android device read the text and convert it to audio out via the speaker. Android TTS supports multiple languages. TTS is a simple but powerful feature. It can also be effectively used in mobile APPs dedicated to visually impaired people or in educational app for kids or can be used in pronunciation learning app, etc. These are some of the ways you can use TTS. Using TextToSpeech enhances interaction between the user and the mobile application."/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/bnSpeaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_volume"
+                android:layout_gravity="right"/>
+            <TextView
+                android:id="@+id/bnText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="বক্তৃতা থেকে টেক্সট অনেকগুলি সামগ্রী চালিত মোবাইল অ্যাপগুলির একটি অবিচ্ছেদ্য অংশ হয়ে উঠছে। আপনার অ্যাপটি যদি কোনও টিউটোরিয়াল বা সামগ্রিক সামগ্রী ভারী হয়, তবে এটিতে পাঠ্য থেকে ভাষ্য (টিটিএস) বৈশিষ্ট্যটি যুক্ত করার বিষয়ে আপনি উচ্চতর সময় মনে করেন। ভয়েস ইনপুট ভিত্তিক কমান্ড এবং বক্তৃতা পাঠ্য এখন একটি প্রবণতা। এই টিউটোরিয়ালে, আমরা কিভাবে অ্যানড্রইড অ্যাপিতে টেক্সট টু স্পিচ (টিটিএস) বৈশিষ্ট্যটি প্রয়োগ করা যায় তা অন্বেষণ করব। বক্তৃতা থেকে পাঠ্য (টিটিএস) একটি Android ডিভাইসটিকে পাঠ্যটি পাঠ করে এবং স্পিকারের মাধ্যমে অডিওতে রূপান্তর করে। অ্যান্ড্রয়েড টিটিএস একাধিক ভাষা সমর্থন করে। টিটিএস একটি সহজ কিন্তু শক্তিশালী বৈশিষ্ট্য। এটি দৃশ্যত ব্যাধিযুক্ত ব্যক্তিদের বা শিশুদের জন্য শিক্ষামূলক অ্যাপ্লিকেশানে নিবেদিত মোবাইল অ্যাপগুলিতে কার্যকরভাবে ব্যবহার করা যেতে পারে বা এটিকে উচ্চারণ শিখতে অ্যাপ্লিকেশন ইত্যাদিতে ব্যবহার করা যেতে পারে।"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/hindiSpeaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_volume"
+                    android:layout_gravity="right"/>
+                <TextView
+                    android:id="@+id/hindiText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="जब तक आपके अन्दर जुनून और विश्वास है और मेहनत के लिए तैयार हैं, तब तक दुनिया में आप कोई भी काम कर सकते हैं और कुछ भी पा सकते है| दोस्तों ज़िन्दगीं में किसी भी मंज़िल या मुकाम को पाने के लिए सबसे आवश्यक चीज़ आपकी मेहनत तथा आपका धैर्य है। अगर आप ईमानदारी से मेहनत करते हुए तथा कभी भी धैर्य ना खोते हुए अपने मंज़िल की तरफ़ कदम बढ़ाते है तो दुनिया की कोई भी ताकत तथा कोई भी अड़चन आपको सफ़ल होने से नहीं रोक सकती। लेकिन कई बार ऐसा होता है कि जब हमें लगातार मेहनत करने के बाद भी सफलता नही मिलती है तो हम निराश होकर प्रयास करना छोड़ देते है। लेकिन दोस्तो आपको कभी भी निराश नहीं होना चाहिए बल्कि ऐसे समय पर आपको एक बार और पूरी ताकत के साथ प्रयास करने की ज़रूरत होती है। दोस्तो कई बार ऐसा देखा गया है कि हम सही मार्गदर्शन ना मिलने के कारण भी सफलता के मार्ग से भटक जाते है। ऐसे समय मे हमे जरूरत होती है किसी ऐसे व्यक्ति या साधन की जो हमे सफलता के लिए प्रेरित करते हुए ऊर्जा और उत्साह से ओतप्रोत कर दे ताकि हम दोबारा से और अधिक जोश तथा जुनून के साथ अपने मंज़िल को पाने के लिए जुट जाएं।"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
